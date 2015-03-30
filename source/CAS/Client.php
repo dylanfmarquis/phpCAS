@@ -3099,9 +3099,11 @@ class CAS_Client
         }
         if (!strpos($server_url, ':')) {
             if (empty($_SERVER['HTTP_X_FORWARDED_PORT'])) {
-                $server_port = $_SERVER['SERVER_PORT'];
+                $server_port = '';
+                //$server_port = $_SERVER['SERVER_PORT'];
             } else {
-                $server_port = $_SERVER['HTTP_X_FORWARDED_PORT'];
+                $server_port = '';
+                #$server_port = $_SERVER['HTTP_X_FORWARDED_PORT'];
             }
 
             if ( ($this->_isHttps() && $server_port!=443)

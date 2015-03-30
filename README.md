@@ -8,6 +8,12 @@ Please see the phpCAS website for more information:
 
 https://wiki.jasig.org/display/CASC/phpCAS
 
+
+Modifications
+=============
+This version of phpCAS (1.3.2) has been modified to work properly behind reverse proxies.
+
+
 LICENSE
 -------
 
